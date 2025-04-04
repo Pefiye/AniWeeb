@@ -15,10 +15,20 @@
     <div class="vig"></div>
     <div class="nav">
         <ul>
-            <li><a href="https://youtube.com">home</a></li>
-            <li><a href="https://youtube.com">home</a></li>
-            <li><a href="https://youtube.com">home</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://fortnitebattlepass.com">Fortnite</a></li>
+            <li><a href="https://pefiye.github.io">Balls</a></li>
         </ul>
+        <input type="checkbox" id="checkb">
+        <div class="nav-burger">
+            <ul>
+                <li><a onclick="closeburger()">⨉</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://fortnitebattlepass.com">Fortnite</a></li>
+                <li><a href="https://pefiye.github.io">Balls</a></li>
+                <li><a href="https://youtube.com"><button>Sign Up</button></a></li>
+            </ul>
+        </div>
 
         <a href="https://youtube.com"><button>Sign Up</button></a>
     </div>
@@ -40,6 +50,14 @@
 
         trailer.style.transform = `translate(${x}px, ${y}px)`; 
         }
+
+
+        function closeburger()
+        {
+            let check = document.getElementById("checkb");
+            check.checked = false;
+        }
+
     </script>
 </body>
 </html>
